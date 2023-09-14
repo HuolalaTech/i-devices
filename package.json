@@ -1,16 +1,62 @@
 {
-  "name": "@hll/i-devices-github",
-  "version": "0.0.1",
+  "name": "@huolala-tech/i-devices",
+  "version": "0.0.6",
+  "description": "i Devices 旨在通过纯CSS代码实现手机、电脑（像iPhone系列、MacBook系列、Apple Watch）等各类设备样式效果",
+  "license": "MIT",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "echo 'just for ci pass'"
+    "build": "father build",
+    "dev": "father dev",
+    "lint": "npm run lint:es && npm run lint:css",
+    "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
+    "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\""
   },
-  "hllStarterKit": {
-    "version": "@hll/create-project@1.10.6",
-    "boilerplateName": "@hll/boilerplate-library-empty"
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
-  "description": "github 临时参仓库",
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.huolala.cn/group-van/i-devices-github"
-  }
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{css,less}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@lit-labs/react": "^1.2.0",
+    "lit": "^2.7.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "father": "^4.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "Devices",
+    "Devices CSS"
+  ],
+  "authors": []
 }

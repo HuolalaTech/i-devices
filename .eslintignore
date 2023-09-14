@@ -1,0 +1,6 @@
+.eslintrc.js
+tsconfig.json
+tailwind.config.js
+postcss.config.js
+prettier.config.js
+scripts
