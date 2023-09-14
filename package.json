@@ -1,0 +1,16 @@
+{
+  "name": "@hll/i-devices-github",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "echo 'just for ci pass'"
+  },
+  "hllStarterKit": {
+    "version": "@hll/create-project@1.10.6",
+    "boilerplateName": "@hll/boilerplate-library-empty"
+  },
+  "description": "github 临时参仓库",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.huolala.cn/group-van/i-devices-github"
+  }
+}
