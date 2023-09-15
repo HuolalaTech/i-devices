@@ -1,8 +1,13 @@
 {
-  "name": "@huolala-tech/i-devices",
-  "version": "0.0.6",
+  "name": "i-devices",
+  "version": "0.1.2",
   "description": "i Devices 旨在通过纯CSS代码实现手机、电脑（像iPhone系列、MacBook系列、Apple Watch）等各类设备样式效果",
   "license": "MIT",
+  "homepage": "https://i-devices.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HuolalaTech/i-devices"
+  },
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

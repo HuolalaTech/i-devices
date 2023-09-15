@@ -1,10 +1,3 @@
----
-nav: 指南
-group:
-  title: 进阶
-  order: 1
----
-
 ## 什么?
 
 一款通过纯 CSS 代码实现手机（iphone 系列、Google 系列）、电脑（MacBook、SurfaceBook 系列）等各类设备样式效果。
@@ -34,12 +27,12 @@ group:
 #### React 使用方式
 
 ```bash | pure
-yarn add @huolala-tech/i-devices
+yarn add i-devices
 ```
 
 ```jsx | pure
 import React from 'react';
-import { IDevicesReact } from '@huolala-tech/i-devices';
+import { IDevicesReact } from 'i-devices';
 
 export default function () {
   return (
@@ -53,7 +46,7 @@ export default function () {
 #### Vue 使用方式
 
 ```bash | pure
-yarn add @huolala-tech/i-devices
+yarn add i-devices
 ```
 
 ```js | pure
@@ -64,7 +57,7 @@ yarn add @huolala-tech/i-devices
 </template>
 
 <script>
-import '@huolala-tech/i-devices';
+import 'i-devices';
 </script>
 ```
 
@@ -75,7 +68,7 @@ import '@huolala-tech/i-devices';
 更多使用方式，详见设备详情和使用 API
 
 ```tsx
-import { IDevicesReact } from '@huolala-tech/i-devices';
+import { IDevicesReact } from 'i-devices';
 import React from 'react';
 
 export default function () {
@@ -90,122 +83,6 @@ export default function () {
 ## 丰富的设备样式
 
 纯 CSS 代码实现手机、电脑等各类设备样式效果（Modern devices crafted in pure CSS）
-
-```tsx
-import { Col, Row } from 'antd';
-import 'antd/dist/antd.css';
-import React from 'react';
-
-export default function () {
-  const imgStyle: React.CSSProperties = {
-    display: 'block',
-    height: '300px',
-    width: '100%',
-    margin: '10px 0',
-    cursor: 'pointer',
-  };
-
-  return (
-    <div>
-      <Row gutter={24}>
-        <Col span={11}>
-          <a href="/component" target="_blank">
-            <img
-              alt="iphone 14 Pro"
-              style={imgStyle}
-              src="/img/demo-iphone14.png"
-            />
-          </a>
-        </Col>
-        <Col span={11}>
-          <a href="/component/macbook-pro" target="_blank">
-            <img
-              alt="Mac Book Pro"
-              style={imgStyle}
-              src="/img/demo-macBook.png"
-            />
-          </a>
-        </Col>
-      </Row>
-      <Row gutter={24}>
-        <Col span={11}>
-          <a href="/component/apple-watch-ultra" target="_blank">
-            <img
-              alt="Apple Watch Ultra"
-              style={imgStyle}
-              src="/img/demo-appleWatch.png"
-            />
-          </a>
-        </Col>
-        <Col span={11}>
-          <a href="/component/imac" target="_blank">
-            <img alt="iMac" style={imgStyle} src="/img/demo-iMac.png" />
-          </a>
-        </Col>
-      </Row>
-    </div>
-  );
-}
-```
-
-<br />
-<Ad
-  image="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
-  submit="Buy Latte"
-  link="http://buymeacoffee.com/innocces"
-  title="The perfect latte"
-  description="Caffè latte is a coffee beverage of Italian origin made with espresso and steamed milk." 
-></Ad>
-
-```tsx
-import { Col, Row } from 'antd';
-import 'antd/dist/antd.css';
-import React from 'react';
-
-export default function () {
-  const imgStyle: React.CSSProperties = {
-    display: 'block',
-    height: '300px',
-    width: '100%',
-    margin: '10px 0',
-    cursor: 'pointer',
-    borderRadius: '20px',
-  };
-
-  return (
-    <div>
-      <Row gutter={24}>
-        <Col span={11}>
-          <a href="/component/ipad-pro" target="_blank">
-            <img alt="iPad Pro" style={imgStyle} src="/img/demo-iPad.png" />
-          </a>
-        </Col>
-        <Col span={11}>
-          <a href="/component/homepod" target="_blank">
-            <img alt="HomePod" style={imgStyle} src="/img/demo-homePod.png" />
-          </a>
-        </Col>
-      </Row>
-      <Row gutter={24}>
-        <Col span={11}>
-          <a href="/component/google-pixel-6-pro" target="_blank">
-            <img
-              alt="Google Pixel 6 Pro"
-              style={imgStyle}
-              src="/img/demo-googlePixel.png"
-            />
-          </a>
-        </Col>
-        <Col span={11}>
-          <a href="/component/iphone" target="_blank">
-            <img alt="iPhone" style={imgStyle} src="/img/demo-iphone.png" />
-          </a>
-        </Col>
-      </Row>
-    </div>
-  );
-}
-```
 
 <br />
 
