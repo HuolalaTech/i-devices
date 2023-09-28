@@ -56,6 +56,200 @@ export class IDevices extends LitElement {
     overflow: hidden;
   }
 
+  .device-iphone-15 {
+    height: 868px;
+    width: 428px;
+  }
+
+  .device-iphone-15 .device-frame {
+    background: #010101;
+    border: 1px solid #1b1721;
+    border-radius: 68px;
+    box-shadow: inset 0 0 4px 2px #c0b7cd, inset 0 0 0 6px #342c3f;
+    height: 868px;
+    padding: 19px;
+    width: 428px;
+  }
+
+  .device-iphone-15 .device-screen {
+    border-radius: 49px;
+    height: 830px;
+    width: 390px;
+  }
+
+  .device-iphone-15 .device-stripe::after,
+  .device-iphone-15 .device-stripe::before {
+    border: solid rgba(1, 1, 1, .25);
+    border-width: 0 7px;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+  }
+
+  .device-iphone-15 .device-stripe::after {
+    top: 85px;
+  }
+
+  .device-iphone-15 .device-stripe::before {
+    bottom: 85px;
+  }
+
+  .device-iphone-15 .device-header {
+    background: #010101;
+    border-radius: 20px;
+    height: 35px;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    top: 29px;
+    width: 120px;
+  }
+
+  .device-iphone-15 .device-sensors::after,
+  .device-iphone-15 .device-sensors::before {
+    content: "";
+    position: absolute;
+  }
+
+  .device-iphone-15 .device-sensors::after {
+    background: #010101;
+    border-radius: 17px;
+    height: 33px;
+    left: 50%;
+    margin-left: -60px;
+    top: 30px;
+    width: 74px;
+  }
+
+  .device-iphone-15 .device-sensors::before {
+    background: radial-gradient(farthest-corner at 20% 20%, #6074bf 0, transparent 40%), radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555e 20%, transparent 50%);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, .05);
+    height: 9px;
+    left: 50%;
+    margin-left: 36px;
+    top: 42px;
+    width: 9px;
+  }
+
+  .device-iphone-15 .device-btns {
+    background: #1b1721;
+    border-radius: 2px;
+    height: 32px;
+    left: -2px;
+    position: absolute;
+    top: 115px;
+    width: 3px;
+  }
+
+  .device-iphone-15 .device-btns::after,
+  .device-iphone-15 .device-btns::before {
+    background: #1b1721;
+    border-radius: 2px;
+    content: "";
+    height: 62px;
+    left: 0;
+    position: absolute;
+    width: 3px;
+  }
+
+  .device-iphone-15 .device-btns::after {
+    top: 60px;
+  }
+
+  .device-iphone-15 .device-btns::before {
+    top: 140px;
+  }
+
+  .device-iphone-15 .device-power {
+    background: #1b1721;
+    border-radius: 2px;
+    height: 100px;
+    position: absolute;
+    right: -2px;
+    top: 200px;
+    width: 3px;
+  }
+
+  .device-iphone-15 .device-home::after,
+  .device-iphone-15 .device-home::before {
+    border: solid rgba(1, 1, 1, .25);
+    border-width: 6px 0;
+    content: "";
+    height: 6px;
+    position: absolute;
+    width: 6px;
+    z-index: 9;
+  }
+
+  .device-iphone-15 .device-home::after {
+    right: 86px;
+    top: 0;
+  }
+
+  .device-iphone-15 .device-home::before {
+    bottom: 0;
+    left: 86px;
+  }
+
+  .device-iphone-15.device-silver .device-frame {
+    border-color: #c8cacb;
+    box-shadow: inset 0 0 4px 2px white, inset 0 0 0 6px #e2e3e4;
+  }
+
+  .device-iphone-15.device-silver .device-btns {
+    background: #c8cacb;
+  }
+
+  .device-iphone-15.device-silver .device-btns::after,
+  .device-iphone-15.device-silver .device-btns::before {
+    background: #c8cacb;
+  }
+
+  .device-iphone-15.device-silver .device-power {
+    background: #c8cacb;
+  }
+
+  .device-iphone-15.device-gold .device-frame {
+    border-color: #e7d19e;
+    box-shadow: inset 0 0 4px 2px white, inset 0 0 0 6px #d2ab4c;
+  }
+
+  .device-iphone-15.device-gold .device-btns {
+    background: #e7d19e;
+  }
+
+  .device-iphone-15.device-gold .device-btns::after,
+  .device-iphone-15.device-gold .device-btns::before {
+    background: #e7d19e;
+  }
+
+  .device-iphone-15.device-gold .device-power {
+    background: #e7d19e;
+  }
+
+  .device-iphone-15.device-pink .device-frame {
+    border-color: #ef72a5;
+    box-shadow: inset 0 0 4px 2px white, inset 0 0 0 6px rgb(244 74 144);
+  }
+
+  .device-iphone-15.device-pink .device-btns {
+    background: #ef72a5;
+  }
+
+  .device-iphone-15.device-pink .device-btns::after,
+  .device-iphone-15.device-pink .device-btns::before {
+    background: #ef72a5;
+  }
+
+  .device-iphone-15.device-pink .device-power {
+    background: #ef72a5;
+  }
+
+
   .device-iphone-14-pro {
     height: 868px;
     width: 428px;
